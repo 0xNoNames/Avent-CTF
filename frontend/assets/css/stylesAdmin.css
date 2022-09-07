@@ -1,0 +1,137 @@
+th,
+td {
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  padding: 1rem;
+  width: 20%;
+}
+
+th {
+  border-top: none;
+  font-size: larger;
+  padding: 1.5rem;
+}
+
+td:last-child,
+td:nth-child(4) {
+  padding: 1rem 0 1rem 0;
+  width: 5%;
+}
+
+td:last-child,
+th:last-child {
+  border-right: none;
+}
+
+body {
+  background-color: black;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+table {
+  margin: 3rem;
+  width: 50%;
+  border-spacing: 0;
+  border-bottom: none;
+  border-radius: 0.25rem;
+  backdrop-filter: saturate(150%);
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+#newForm {
+  margin: 3rem 0 0 0;
+  padding: 2rem;
+  width: 10%;
+  font-size: xx-large;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.25rem;
+  backdrop-filter: saturate(150%);
+  backdrop-filter: blur(6px);
+  border: 1px solid white;
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+#newPrenom,
+#newScore, #newFlags {
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  border: none;
+  width: 75%;
+}
+
+#newForm > button {
+  font-size: large;
+  background: rgba(73, 156, 73, 0.6);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+#newForm > button:hover {
+  cursor: pointer;
+  background: rgba(73, 156, 73, 0.8);
+}
+
+.delete,
+.score {
+  cursor: pointer;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  white-space: nowrap;
+  padding: 0.75rem;
+}
+
+.delete {
+  background-color: rgba(255, 0, 0, 0.6);
+}
+
+.delete:hover {
+  background-color: rgba(255, 0, 0, 0.8);
+}
+
+.score {
+  background-color: rgba(0, 0, 255, 0.6);
+}
+
+.score:hover {
+  background-color: rgba(0, 0, 255, 0.8);
+}
+
+/* -- -- -- -- -- -- -- -- -- -- -- -- SCROLLBAR -- -- -- -- -- -- -- -- -- -- -- -- */
+
+/* width */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* Track  */
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 10px 10px rgba(255, 255, 255, 0.3);
+  box-shadow: inset 0 0 10px 10px rgba(255, 255, 255, 0.5);
+  border: solid 3px transparent;
+  border-radius: 5px;
+}
+
+/* Handle  */
+::-webkit-scrollbar-thumb {
+  background-color: rgb(221, 221, 221);
+  border-radius: 5px;
+}
+
+/* Handle on hover  */
+::-webkit-scrollbar-thumb:hover {
+  background: #e0ffe5;
+}

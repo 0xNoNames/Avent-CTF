@@ -1,0 +1,90 @@
+th,
+td {
+  border-right: 1px solid rgba(255, 255, 255, 0.5);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  padding: 1.25rem;
+  width: 33%;
+}
+
+td:last-child,
+th:last-child {
+  border-right: none;
+}
+
+tbody > tr:last-child > td {
+  border-bottom: none;
+}
+
+th {
+  font-size: x-large;
+}
+
+p {
+  color: rgba(0, 255, 0, 0.6);
+}
+
+body {
+  background-color: black;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+#p1 {
+  color: gold;
+}
+
+#p2 {
+  color: silver;
+}
+
+#p3 {
+  color: #dca570;
+}
+
+#title {
+  margin-top: 5%;
+}
+
+table {
+  margin: 3rem;
+  width: 50%;
+  border-spacing: 0;
+  border-bottom: none;
+  border-radius: 0.25rem;
+  backdrop-filter: saturate(150%);
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+/* -- -- -- -- -- -- -- -- -- -- -- -- SCROLLBAR -- -- -- -- -- -- -- -- -- -- -- -- */
+
+/* width */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* Track  */
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 10px 10px rgba(255, 255, 255, 0.3);
+  box-shadow: inset 0 0 10px 10px rgba(255, 255, 255, 0.5);
+  border: solid 3px transparent;
+  border-radius: 5px;
+}
+
+/* Handle  */
+::-webkit-scrollbar-thumb {
+  background-color: rgb(221, 221, 221);
+  border-radius: 5px;
+}
+
+/* Handle on hover  */
+::-webkit-scrollbar-thumb:hover {
+  background: #e0ffe5;
+}

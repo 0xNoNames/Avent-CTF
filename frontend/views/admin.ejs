@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="/ctf-avent/static/css/stylesAdmin.css" rel="stylesheet" />
+  <link rel="icon" type="image/png" href="/ctf-avent/static/favicon/favicon.png" />
+  <title>ADMIN</title>
+</head>
+
+<body>
+  <div id="snow"></div>
+
+
+  <form id="newForm">
+    <input type="text" id="newPrenom" placeholder="Prénom" autocomplete="off" required />
+    <input type="text" id="newScore" placeholder="Score" autocomplete="off" />
+    <input type="text" id="newFlags" placeholder="Flags" autocomplete="off" />
+    <button>Ajouter</button>
+  </form>
+
+  <span id="messageErreur"></span>
+
+  <table>
+    <tr>
+      <th>Prénom</th>
+      <th>Points</th>
+      <th>Nombre de flags</th>
+    </tr>
+    <% let i = 1; %>
+    <% data.forEach((utilisateur) => { %>
+    <tr id="<%=utilisateur.id%>">
+      <td style="text-align: start">
+        <div style="width: 100%; display: flex; flex-direction: row">
+          <div style="justify-self: start">#<%=i%></div>
+          <div style="width: 100%; text-align: center"><%=utilisateur.prenom%></div>
+        </div>
+      </td>
+      <td><%=utilisateur.score%></td>
+      <td><%=utilisateur.flags%></td>
+      <td><button class="score" onclick="updateScore(this)">Mettre à jour</button></td>
+      <td><button class="delete" onclick="deleteUtilisateur(this)">Supprimer</button></td>
+    </tr>
+    <% ++i }); %>
+  </table>
+
+
+  <script src="/ctf-avent/static/js/admin.js"></script>
+  <script type="module" src="/ctf-avent/static/js/showSnow.js"></script>
+
+</body>
+
+</html>

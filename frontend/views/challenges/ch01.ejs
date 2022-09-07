@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" href="/ctf-avent/static/favicon/favicon.png" />
+  <title>Challenge 01</title>
+</head>
+
+<body style="background-color:black; color:white; font-family: Arial, Helvetica, sans-serif; height: 100vh; display: flex; align-items: center; justify-content: center; padding: 0; margin: 0">
+
+  <div id="snow"></div>
+
+  <div style="padding: 1.5rem; border-radius: 0.25rem; backdrop-filter: saturate(150%); backdrop-filter: blur(6px); border: 1px solid rgba(255, 255, 255, 0.5); border-color: rgba(255, 255, 255, 0.5);">
+    <form id="form" style="display: flex; flex-direction: column; align-items: center" autocomplete="off">
+      <h3>Entrez le pass pour récupérer le flag :~)</h3>
+      <div style="display:flex; margin: 2rem;">
+        <input id="password" type="text" placeholder="Mot de passe" style="font-size: large; padding: 0.75rem; border-radius: 10px 0 0 10px; border: none;" required />
+        <button style="font-size: large; padding: 0.75rem; border-radius: 0 10px 10px 0; border: none; background-color: chartreuse; cursor: pointer;">Envoyer</button>
+      </div>
+      <span id="message">&nbsp</span>
+    </form>
+  </div>
+
+  <script type="module" src="/ctf-avent/static/js/showSnow.js"></script>
+  <script src="/ctf-avent/static/js/challenges/ch01.js"></script>
+</body>
+
+</html>
